@@ -1,6 +1,4 @@
-# miniParamOne
-微信小程序实战，数据获取one一个。
-还请根据提供的数据接口自行去获取数据，代码中就不要在使用写好的地址了。
+# 奇闻天下
 数据接口：
 首页：date是日期，传入不同的日期获取对应的数据
 http://v3.wufazhuce.com:8000/api/channel/one/".date."/杭州市

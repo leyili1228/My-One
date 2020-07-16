@@ -52,14 +52,14 @@
 
 <!-- 作者信息和责任说明 -->
 <template name="autho-info-intro"> 
-<view class='introduce' style='margin-left:0'>{{author_introduce}}</view>
+<!-- <view class='introduce' style='margin-left:0'>{{author_introduce}}</view>
 <view class='introduce' style='margin-left:0'>{{copyright}}</view>
 <view wx:if="{{is_type==2}}">
 <button wx:if="{{lastid>0}}" style='float:left;left:0' bindtap="gotoNewPage" data-id="{{lastid}}">←前一章</button>
 <button wx:else style='float:left;left:0;color:gray'>←前一章</button>
 <button wx:if="{{nextid>0}}" style='float:right;right:0' bindtap="gotoNewPage" data-id="{{nextid}}">后一章→</button>
 <button wx:else style='float:right;right:0;color:gray'>后一章:即将更新</button>
-</view>
+</view> -->
 <view class='author' style='margin-left:0'>
 <label  class='label-author'>作者</label>
 <label class='label-line'></label>

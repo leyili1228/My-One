@@ -67,7 +67,7 @@ Page({
                                     res.data.data.serial_list = wx.getStorageSync(res.data.data.serial_id)
                                     res.data.data.naviTitle = res.data.data.title
                                 }
-                                // console.log(res.data.data.serial_list)
+                                console.log(res.data.data.serial_list)
                             }else if(options.cateid==3) {
                                 content = res.data.data.answer_content
                                 res.data.data.naviTitle = res.data.data.question_title
@@ -121,15 +121,7 @@ Page({
                     })
 
       //音频播放监听时间注册
-        app.audio.onPlay(() => {
-            console.log('播放开始监听...')
-        })
-        app.audio.onPause(() => {
-            console.log('暂停播放···')
-        })
-        app.audio.onStop(() => {
-            console.log('停止播放···')
-        })
+       
         
         app.audio.onTimeUpdate(() => {
             app.globalData.play[0].currentTime = app.audio.currentTime

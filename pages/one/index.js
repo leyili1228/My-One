@@ -328,42 +328,8 @@ showTodayView:function(res) {
    * 播放音乐
    */
   startMusic:function(res) {
-    //   var url = res.target.dataset.url
-    //   console.log(url)
-    //   url = 'http://music.wufazhuce.com/lkT5CTbkhLS1eyzW4XLjASbRjdG5'
-    //  const innerAudioContext = wx.createInnerAudioContext('audio')
-    //   innerAudioContext.autoplay = true
-    //   innerAudioContext.src = url
-    //   innerAudioContext.onPlay(() => {
-    //       console.log('开始播放')
-    //   })
-    //   innerAudioContext.onError((res) => {
-    //       console.log(res.errMsg)
-    //       console.log(res.errCode)
-    //   })
+  
   },
-  /**
-    * 播放音频
-    */
-  playAudio: function (res) {
-      var play = this.data.Play
-      play[0]['isPlay'] = 1
-      var url = play[0]['playUrl']
-      app.audio.src = url
-      app.globalData.play[0].playNow = 1
-      app.audio.startTime = play[0].currentTime
-      this.setData({ 'Play[0].isPlay':1,'Play[0].playNow':1})
-      app.audio.play()
-      console.log('start play···')
-  },
-  pauseAudio: function (res) {
-      var play = this.data.Play
-      play[0].playNow = 0
-      this.setData({ Play: play })
-      app.audio.pause()
-      console.log('pause now···')
-  },
-
   /**
    * 生命周期函数--监听页面隐藏
    */
